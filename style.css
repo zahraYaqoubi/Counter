@@ -1,0 +1,95 @@
+body {
+  /* background-image: linear-gradient(90deg, #b1f4ce, rgb(83, 172, 124)); */
+  /* background-image: url("https://i.ibb.co/F7sgFvW/web-bg7.png"); */
+  background-image: url("https://i.ibb.co/5WWRBCd/web-bg-purple.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: #295c34;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  body {
+    overflow: hidden;
+  }
+}
+h3,
+h2 {
+  font-weight: bold;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+#div_main {
+  height: 100%;
+  width: 100%;
+}
+.calender_box {
+  box-shadow: 0 0 10px #3f44445d;
+  flex-direction: column;
+  min-width: 60px;
+}
+@media (max-width: 316px) {
+  .calender_box1 {
+    margin-bottom: 1rem;
+  }
+}
+.counter_tick {
+  position: relative;
+}
+.counter_tick .sec {
+  --rotation: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(var(--rotation));
+}
+
+.counter_tick .sec1 {
+  --rotation: 15deg;
+}
+.counter_tick .sec2 {
+  --rotation: 30deg;
+}
+.counter_tick .sec3 {
+  --rotation: 45deg;
+}
+.counter_tick .sec4 {
+  --rotation: 60deg;
+}
+.counter_tick .sec5 {
+  --rotation: 75deg;
+}
+.counter_tick .sec6 {
+  --rotation: 90deg;
+}
+.counter_tick .sec7 {
+  --rotation: 105deg;
+}
+.counter_tick .sec8 {
+  --rotation: 120deg;
+}
+.counter_tick .sec9 {
+  --rotation: 135deg;
+}
+.counter_tick .sec10 {
+  --rotation: 150deg;
+}
+.counter_tick .sec11 {
+  --rotation: 165deg;
+}
+.counter_tick .sec12 {
+  --rotation: 180deg;
+}
+
+.sec::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #295c34;
+  z-index: 12;
+  border-radius: 20px 20px 0 0;
+}
